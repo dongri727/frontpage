@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/cupertino.dart';
 import 'hiragana.dart';
-
 
 
 void main() {
@@ -27,7 +25,7 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
             children:[
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(30),
                 child: Image.network(
@@ -39,7 +37,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+              padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
               child: Text(
                 'わたしたちの町',
                 style: TextStyle(
@@ -52,13 +50,13 @@ class MyApp extends StatelessWidget {
             ),
             ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                 child: Text(
                   'ふらったー小学校',
                 ),
               ),
             Padding(
-              padding: EdgeInsets.fromLTRB(300, 30, 300, 0),
+              padding: EdgeInsets.fromLTRB(500, 10, 500, 0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
