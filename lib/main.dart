@@ -11,12 +11,25 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  var titleText = 'myapp';
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
-      home:Scaffold(
+        home: Home(titleText: titleText),
+    );
+  }
+}
+class Home extends StatelessWidget{
+  final String titleText;
+
+  const Home({required this.titleText});
+
+  @override
+  Widget build(BuildContext context){
+
+    return Scaffold(
+
         appBar: AppBar(
         title: Text('さあ　はじめましょう'),
       ),
@@ -111,7 +124,6 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
-    ),
     );
   }
 }
