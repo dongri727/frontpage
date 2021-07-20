@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
             children:[
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+              padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(30),
                 child: Image.network(
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
               child: Text(
                 'わたしたちの町',
                 style: TextStyle(
@@ -51,8 +51,14 @@ class MyApp extends StatelessWidget {
               ),
             ),
             ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                child: Text(
+                  'ふらったー小学校',
+                ),
+              ),
             Padding(
-              padding: EdgeInsets.fromLTRB(50, 30, 50, 0),
+              padding: EdgeInsets.fromLTRB(300, 30, 300, 0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -90,7 +96,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
            Padding(
-            padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
             child: ElevatedButton(
               child: Text('なまえをかきましょう'),
               onPressed: () {
